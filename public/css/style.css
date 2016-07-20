@@ -58,5 +58,8 @@ label {
 h3 {
   font-size: 16pt;
   margin: 1%;
+}
 
+.allborrowersbtn {
+  border-color: green;
 }

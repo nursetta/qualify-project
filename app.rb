@@ -21,7 +21,31 @@ set :method_override, true
       rental_income = borrower.net_rental_income
       total_income = base_income + bonus_income + commision_income + rental_income
       p total_income
-    if total_income < 10000
+
+      rent_expense = borrower.rent
+      mortgage_expense = borrower.mortgage_payment_monthly
+      credit_card_expense = borrower.credit_card_payments
+      auto_expense = borrower.auto_loan_payments
+      installment_expense = borrower.installment_loan_payments
+      total_debt = rent_expense + mortgage_expense + credit_card_expense + auto_expense + installment_expense
+      p total_debt
+      
+      home_price = borrower.home_price
+      loan_amount = borrower.loan_amount
+      interest_rate = borrower.interest_rate
+      pi = borrower.monthly_pi
+      ti = borrower.monthly_ti
+      hoa = borrower.monthly_hoa
+      total_mortgage_payment = pi + ti + hoa
+      p total_mortgage_payment   
+ 
+      dti = (((total_debt.to_f) - rent_expense - mortgage_expense) + total_mortgage_payment) / total_income.to_f
+      p dti
+
+      ltv = loan_amount.to_f / home_price.to_f
+      p ltv
+ 
+    if dti > 0.45 || ltv > 0.9
       "Sorry You dont Qualify"
     else
       "Congrats! You Qualify!"  

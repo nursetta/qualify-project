@@ -46,30 +46,28 @@
 
 <h3>New Mortgage Information</h3>
 
-  <label for="home_price">Base Monthly Income:</label>
+  <label for="home_price">New Home Price</label>
   <input name="home_price" value = "<%= @borrower_to_edit.home_price %>">
 
-  <label for="loan_amount">Bonus Monthly Income</label>
+  <label for="loan_amount">New Loan Amount</label>
   <input name="loan_amount" value = "<%= @borrower_to_edit.loan_amount %>">
 
-  <label for="interest_rate">Commision Monthly Income</label>
+  <label for="interest_rate">New Interest Rate</label>
   <input name="interest_rate" value = "<%= @borrower_to_edit.interest_rate %>">
 
-  <label for="monthly_pi">Net Rental Income</label>
+  <label for="monthly_pi">Monthly PI</label>
   <input name="monthly_pi" value = "<%= @borrower_to_edit.monthly_pi %>">
 
-  <label for="monthly_ti">Net Rental Income</label>
+  <label for="monthly_ti">Monthly TI</label>
   <input name="monthly_ti" value = "<%= @borrower_to_edit.monthly_ti %>">
 
-  <label for="monthly_hoa">Net Rental Income</label>
+  <label for="monthly_hoa">Monthly HOA</label>
   <input name="monthly_hoa" value = "<%= @borrower_to_edit.monthly_hoa %>">
 
-  <label for="total_monthly_payment">Net Rental Income</label>
+  <label for="total_monthly_payment">Total Monthly Payment</label>
   <input name="total_monthly_payment" value = "<%= @borrower_to_edit.total_monthly_payment %>">
   
 <input name= '_method' type = 'hidden' value = 'put'>
-<input type='submit' value = 'Save'>
-
-
+<input type='submit' value = 'SAVE'>
 
 </form>
