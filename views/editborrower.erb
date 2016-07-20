@@ -1,0 +1,75 @@
+<h3>Borrower Information</h3>
+
+<form action="/borrowers/<%= @borrower_to_edit.id %>" method="post">
+  <label for="name">Name:</label>
+  <input name="name" value = "<%= @borrower_to_edit.name %>">
+
+  <label for="address">Address:</label>
+  <input name="address" value = "<%= @borrower_to_edit.address %>">
+
+  <label for="phone_number">Phone Number:</label>
+  <input name="phone_number" value = "<%= @borrower_to_edit.phone_number %>">
+
+  <label for="email">Email:</label>
+  <input name="email" value = "<%= @borrower_to_edit.email %>">
+
+<h3>Monthly Income Information</h3>
+
+  <label for="base_monthly_income">Base Monthly Income:</label>
+  <input name="base_monthly_income" value = "<%= @borrower_to_edit.base_monthly_income %>">
+
+  <label for="bonus_monthly_income">Bonus Monthly Income</label>
+  <input name="bonus_monthly_income" value = "<%= @borrower_to_edit.bonus_monthly_income %>">
+
+  <label for="commision_monthly_income">Commision Monthly Income</label>
+  <input name="commision_monthly_income" value = "<%= @borrower_to_edit.commision_monthly_income %>">
+
+  <label for="net_rental_income">Net Rental Income</label>
+  <input name="net_rental_income" value = "<%= @borrower_to_edit.net_rental_income %>">
+
+<h3>Monthly Expense Information</h3>
+
+  <label for="rent">Rent:</label>
+  <input name="rent" value = "<%= @borrower_to_edit.rent %>">
+
+  <label for="mortgage_payment_monthly">Monthly Mortgage Payment</label>
+  <input name="mortgage_payment_monthly" value = "<%= @borrower_to_edit.mortgage_payment_monthly %>">
+
+  <label for="credit_card_payments"> Monthly Credit Card Payments</label>
+  <input name="credit_card_payments" value = "<%= @borrower_to_edit.credit_card_payments %>">
+
+  <label for="auto_loan_payments">Monthly Car Payments</label>
+  <input name="auto_loan_payments" value = "<%= @borrower_to_edit.auto_loan_payments %>">
+
+  <label for="installment_loan_payments">Monthly Installment Payments</label>
+  <input name="installment_loan_payments" value = "<%= @borrower_to_edit.installment_loan_payments %>">
+
+<h3>New Mortgage Information</h3>
+
+  <label for="home_price">Base Monthly Income:</label>
+  <input name="home_price" value = "<%= @borrower_to_edit.home_price %>">
+
+  <label for="loan_amount">Bonus Monthly Income</label>
+  <input name="loan_amount" value = "<%= @borrower_to_edit.loan_amount %>">
+
+  <label for="interest_rate">Commision Monthly Income</label>
+  <input name="interest_rate" value = "<%= @borrower_to_edit.interest_rate %>">
+
+  <label for="monthly_pi">Net Rental Income</label>
+  <input name="monthly_pi" value = "<%= @borrower_to_edit.monthly_pi %>">
+
+  <label for="monthly_ti">Net Rental Income</label>
+  <input name="monthly_ti" value = "<%= @borrower_to_edit.monthly_ti %>">
+
+  <label for="monthly_hoa">Net Rental Income</label>
+  <input name="monthly_hoa" value = "<%= @borrower_to_edit.monthly_hoa %>">
+
+  <label for="total_monthly_payment">Net Rental Income</label>
+  <input name="total_monthly_payment" value = "<%= @borrower_to_edit.total_monthly_payment %>">
+  
+<input name= '_method' type = 'hidden' value = 'put'>
+<input type='submit' value = 'Save'>
+
+
+
+</form>

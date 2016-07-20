@@ -38,3 +38,25 @@ header nav ul li {
 header nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.intro {
+margin: 1%;
+color: green;
+}
+
+input {
+  display: block;
+  margin: 1%;
+}
+
+label {
+  color: green;
+  margin: 1%;
+}
+
+h3 {
+  font-size: 16pt;
+  margin: 1%;
+
+}

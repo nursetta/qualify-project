@@ -1,0 +1,49 @@
+<h2></h2>
+
+<div class = "borrowers">
+	<% @borrowers.each do |borrower|%>
+		<h2> <%= borrower[:name] %> </h2>
+		<li>Name:  <%= borrower[:name] %> </li>
+		<li>Address: <%= borrower[:address] %> </li>
+		<li>Phone Number: <%= borrower[:phone_number] %> </li>
+		<li>Email: <%= borrower[:email] %> </li>
+		
+		<h3> Monthly Income </h3>
+		<li>Income-Base: <%= borrower[:base_monthly_income] %> </li>
+		<li>Income-Bonus: <%= borrower[:bonus_monthly_income] %> </li>
+		<li>Income-Commision: <%= borrower[:commision_monthly_income] %> </li>
+		<li>Net Rental Income: <%= borrower[:net_rental_income] %> </li>
+
+		<h3> Monthly Expenses </h3>
+		<li>Rent: <%= borrower[:rent] %> </li>
+		<li>Mortgage Payment: <%= borrower[:mortgage_payment_monthly] %> </li>
+		<li>Credit Card Payments: <%= borrower[:credit_card_payments] %> </li>
+		<li>Auto Loan Payments: <%= borrower[:auto_loan_payments] %> </li>
+		<li>Installment Loan Payments: <%= borrower[:installment_loan_payments] %> </li>
+
+		<h3> New Mortgage info </h3>
+		<li>Price of Home: <%= borrower[:home_price] %> </li>
+		<li>Loan Amount: <%= borrower[:loan_amount] %> </li>
+		<li>Interest Rate: <%= borrower[:interest_rate] %> </li>
+		<li>Monthly PI: <%= borrower[:monthly_pi] %> </li>
+		<li>Monthly TI: <%= borrower[:monthly_ti] %> </li>
+		<li>Monthly HO: A<%= borrower[:monthly_hoa] %> </li>
+		<li>Total Monthly Payment: <%= borrower[:total_monthly_payment] %> </li>
+				
+</div>
+
+    <form method= 'post' action = '/borrowers/<%= borrower.id %>'>
+       	<input name = '_method' type = 'hidden' value = 'delete'>
+        <input type = 'submit' value = 'delete'>
+	</form>
+
+    <form method= 'get' action = '/borrowers/<%= borrower.id %>/edit'>
+        <input type = 'submit' value = 'edit'>
+	</form>
+   
+    <form method= 'get' action = '/borrowers/qualify/<%= borrower.id %>'>
+        <input type = 'submit' value = 'Do I Qualify?'>
+	</form>
+
+
+<% end %>
