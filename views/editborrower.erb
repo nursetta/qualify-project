@@ -67,6 +67,15 @@
   <label for="total_monthly_payment">Total Monthly Payment</label>
   <input name="total_monthly_payment" value = "<%= @borrower_to_edit.total_monthly_payment %>">
   
+<h3>Credit Score</h3>
+
+  <label for="credit_score">Credit Score</label>
+  <input name="credit_score" value = "<%= @borrower_to_edit.credit_score %>">
+
+<h3>Employment History</h3>
+  <label for="length_of_employment">Length of Employment</label>
+  <input name="length_of_employment" value = "<%= @borrower_to_edit.length_of_employment %>">  
+
 <input name= '_method' type = 'hidden' value = 'put'>
 <input type='submit' value = 'SAVE'>
 

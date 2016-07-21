@@ -23,7 +23,10 @@ Borrower.create({
 				 	monthly_pi: 898,
 				 	monthly_ti: 150,
 				 	monthly_hoa: 250,
-				 	total_monthly_payment: 1298
+				 	total_monthly_payment: 1298,
+				 	credit_score: 740,
+	  				type_of_employment: "W2",
+	  				length_of_employment: 2
 				})
 
 Borrower.create({
@@ -49,7 +52,10 @@ Borrower.create({
 				 	monthly_pi: 898,
 				 	monthly_ti: 150,
 				 	monthly_hoa: 250,
-				 	total_monthly_payment: 1298
+				 	total_monthly_payment: 1298,
+				 	credit_score: 540,
+	  				type_of_employment: "Self Employed",
+	  				length_of_employment: 2
 				})
 
 Borrower.create({
@@ -75,5 +81,8 @@ Borrower.create({
 				 	monthly_pi: 2148,
 				 	monthly_ti: 150,
 				 	monthly_hoa: 250,
-				 	total_monthly_payment: 2548
+				 	total_monthly_payment: 2548,
+				 	credit_score: 850,
+	  				type_of_employment: "W2",
+	  				length_of_employment: 2
 				})

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160719160812) do
+ActiveRecord::Schema.define(version: 20160720152838) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,9 @@ ActiveRecord::Schema.define(version: 20160719160812) do
     t.integer  "monthly_ti"
     t.integer  "monthly_hoa"
     t.integer  "total_monthly_payment"
+    t.integer  "credit_score"
+    t.string   "type_of_employment"
+    t.integer  "length_of_employment"
   end
 
 end

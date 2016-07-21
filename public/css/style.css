@@ -2,52 +2,64 @@ body {
   line-height: 1.5;
   background: #f1f4f6;
 }
+.navbar .navbar-header {
 
-header {
-  width: 100%;
-  background: black;
+   font-family: Optima;
+}
+.navbar .navbar-header h5 {
+  font-family: Optima;
+  font-size: 30px;
+}
+#myNavbar {
+  font-family: Optima;
+  font-size: 16px;
+  padding: 10px 10px;
+}
+.navbar-header .navbar-brand {
+  height: 40px;
 }
 
-header nav { 
-  max-width: 960px;
-  margin: 0 auto;
-  height: 60px;
-  line-height: 60px;
+.navbar-header .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 14px 10px;
+    margin-top: 16px;
+    margin-right: 15px;
+    margin-bottom: 0px;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
 }
 
-header nav ul {
-  height: 60px;
-  line-height: 60px;
+@media (min-width: 768px)
+.navbar-nav>li>a {
+    padding-top: 30px;
 }
 
-header nav ul li:first-child {
-  float: left;
-  padding: 0;
-  font-size: 35px;
-}
-
-header nav ul li {
-  display: inline;
-  list-style-type: none;
-  height: 60px;
-  line-height: 60px;
-  float: right;
-  padding: 0 10px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-.intro {
-margin: 1%;
-color: green;
-}
-
-input {
-  display: block;
+.allborrowersbtn input {
+  display: inline-block;
   margin: 1%;
+  font-family: Optima;
+  background: #4dd66d;
+  background-image: -webkit-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -moz-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -ms-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -o-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: linear-gradient(to bottom, #4dd66d, #4f5c63);
+  -webkit-border-radius: 20;
+  -moz-border-radius: 20;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  padding: 6px 10px 6px 10px;
+  text-decoration: none;
+  align: center;
+  display: inline;
+}
+
+.allborrowersbtn input:hover {
+  background: #4f5c63;
 }
 
 label {
@@ -55,11 +67,36 @@ label {
   margin: 1%;
 }
 
-h3 {
+.page_text {
+  font-family: Optima;
   font-size: 16pt;
   margin: 1%;
+  text-align: center;
 }
 
-.allborrowersbtn {
-  border-color: green;
+.create_borrower {
+  font-family: Optima;
+  background: #4dd66d;
+  background-image: -webkit-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -moz-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -ms-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: -o-linear-gradient(top, #4dd66d, #4f5c63);
+  background-image: linear-gradient(to bottom, #4dd66d, #4f5c63);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  align: center;
+}
+
+.create_borrower:hover {
+  background: #4f5c63;
+  text-decoration: none;
+}
+
+.create_form {
+  display: inline-block;
 }
