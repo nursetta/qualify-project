@@ -97,6 +97,6 @@ label {
   text-decoration: none;
 }
 
-.create_form {
-  display: inline-block;
+.edit_borrower {
+  display: inline;
 }

@@ -1,6 +1,6 @@
 <h3>Borrower Information</h3>
 
-<form action="/borrowers/<%= @borrower_to_edit.id %>" method="post">
+<form class = "edit_borrower" action="/borrowers/<%= @borrower_to_edit.id %>" method="post">
   <label for="name">Name:</label>
   <input name="name" value = "<%= @borrower_to_edit.name %>">
 
