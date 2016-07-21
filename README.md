@@ -1,4 +1,7 @@
 # qualify-project
+
+HEROKU LINK: https://doiqualify.herokuapp.com/
+
 1.) Description of App
 
 I would like to make an app that allows someone to see if they pre-qualify for a home... Most people need to go to a bank to talk with a lender to decide if they can qualify, but by using this app, you will have a solid idea of whether or not you can qualify at just abouy any bank. You see, most banks need to be able to sell a loan to an investor in order for it to qualify. The largest imvestors are FNMA and FHLMC. 
