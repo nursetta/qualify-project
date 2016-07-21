@@ -2,6 +2,8 @@ class Qualify < Sinatra::Base
 require 'json'
 set :method_override, true
 
+@borrower
+
   # GET route takes you to the home page of the app.
   get '/' do
     erb :home

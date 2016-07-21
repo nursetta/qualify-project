@@ -1,63 +1,4 @@
-<!-- <div class = "container">
-
-	<div class = "borrowers col-md-6">
-		<% @borrowers.each do |borrower|%>
-			<h2> <%= borrower[:name] %> </h2>
-				<p>Name:  <%= borrower[:name] %> </p>
-				<p>Address: <%= borrower[:address] %> </p>
-				<p>Phone Number: <%= borrower[:phone_number] %> </p>
-				<p>Email: <%= borrower[:email] %> </p>
-		
-			<h3> Monthly Income </h3>
-				<p>Income-Base: <%= borrower[:base_monthly_income] %> </p>
-				<p>Income-Bonus: <%= borrower[:bonus_monthly_income] %> </p>
-				<p>Income-Commision: <%= borrower[:commision_monthly_income] %> </p>
-				<p>Net Rental Income: <%= borrower[:net_rental_income] %> </p>
-
-			<h3> Monthly Expenses </h3>
-				<p>Rent: <%= borrower[:rent] %> </p>
-				<p>Mortgage Payment: <%= borrower[:mortgage_payment_monthly] %> </p>
-				<p>Credit Card Payments: <%= borrower[:credit_card_payments] %> </p>
-				<p>Auto Loan Payments: <%= borrower[:auto_loan_payments] %> </p>
-				<p>Installment Loan Payments: <%= borrower[:installment_loan_payments] %> </p>
-
-			<h3> New Mortgage info </h3>
-				<p>Price of Home: <%= borrower[:home_price] %> </p>
-				<p>Loan Amount: <%= borrower[:loan_amount] %> </p>
-				<p>Interest Rate: <%= borrower[:interest_rate] %> </p>
-				<p>Monthly PI: <%= borrower[:monthly_pi] %> </p>
-				<p>Monthly TI: <%= borrower[:monthly_ti] %> </p>
-				<p>Monthly HOA: <%= borrower[:monthly_hoa] %> </p>
-				<p>Total Monthly Payment: <%= borrower[:total_monthly_payment] %> </p>
-
-			<h3> Credit Score </h3>
-				<p>Credit Score:  <%= borrower[:credit_score] %> </p>
-
-			<h3> Employment History </h3>
-				<p>Length of Employmnet: <%= borrower[:length_of_employment] %> </p>
-
-
-		<div class = "row">
-    		<form class = 'allborrowersbtn ' method= 'post' action = '/borrowers/<%= borrower.id %>'>
-       			<input name = '_method' type = 'hidden' value = 'delete'>
-        		<input class = 'create_borrower1 col-md-3' type = 'submit' value = 'Delete'>
-			</form>
-
-    		<form class = 'allborrowersbtn' method= 'get' action = '/borrowers/<%= borrower.id %>/edit'>
-        		<input class = 'create_borrower1 col-md-3' type = 'submit' value = 'Edit'>
-			</form>
-   	
-    		<form class = 'allborrowersbtn' method= 'get' action = '/borrowers/qualify/<%= borrower.id %>'>
-        		<input class = 'create_borrower1 col-md-3' type = 'submit' value = 'Do I Quapfy?'>
-			</form>
-		</div>
-	</div>
-
-<% end %> -->
-
-
-
-<div class="container">
+<div class="container text-center">
  	<% @borrowers.each do |borrower|%>
   		<h2><%= borrower[:name] %></h2>
 
@@ -164,24 +105,35 @@
         </div>
       </div>
     </div>
-
-		<div class = "row text-center">
-    		<form class = 'allborrowersbtn' method= 'post' action = '/borrowers/<%= borrower.id %>'>
-       			<input name = '_method' type = 'hidden' value = 'delete'>
-        		<input class = 'create_borrower1 text-inline-block' type = 'submit' value = 'Delete'>
-			</form>
-
-    		<form class = 'allborrowersbtn' method= 'get' action = '/borrowers/<%= borrower.id %>/edit'>
-        		<input class = 'create_borrower1 text-inline-block' type = 'submit' value = 'Edit'>
-			</form>
-   	
-    		<form class = 'allborrowersbtn' method= 'get' action = '/borrowers/qualify/<%= borrower.id %>'>
-        		<input class = 'create_borrower1 text-inline-block' type = 'submit' value = 'Do I Qualify?'>
-			</form>
-		</div>
-  
   </div>
 </div>
+
+ <div class="container text-center">
+    <div class="row">
+      
+      <div class="col-sm-12">
+        <div class="col-sm-4">
+          <form class = 'allborrowersbtn' method= 'post' action = '/borrowers/<%= borrower.id %>'>
+                <input name = '_method' type = 'hidden' value = 'delete'>
+                <input class = 'create_borrower1 form-control' type = 'submit' value = 'Delete'>
+          </form>
+        </div>
+
+         <div class="col-sm-4">
+            <form class = 'allborrowersbtn' method= 'get' action = '/borrowers/<%= borrower.id %>/edit'>
+                  <input class = 'create_borrower1 form-control' type = 'submit' value = 'Edit'>
+              </form>
+         </div>
+
+          <div class="col-sm-4">
+            <form class = 'allborrowersbtn' method= 'get' action = '/borrowers/qualify/<%= borrower.id %>'>
+                <input class = 'create_borrower1 form-control' type = 'submit' value = 'Do I Qualify?'>
+            </form>
+          </div>
+      </div>
+
+    </div>
+  </div>
 
 <%end%>
 

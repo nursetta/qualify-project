@@ -1,88 +1,170 @@
-<h3>Borrower Information</h3>
+  <div class = "container text-center">
+      <h3 class = "page_info text-center"> Start by clicking the Borrower info Drop down menu.</h3>
+  </div>
+
+<div class="container text-center">
 
 <form class = "create_form" action="/create" method="post">
-<!--   <label class = "form-control" for="name">Name:</label>
-  <input name="name" type = "text"> -->
-  <div class="form-group col-md-12">
-    <label for="name">Name:</label>
-    <input type="name" class="form">
+
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          
+          <a data-toggle="collapse"  href="#collapse1">Borrower Info</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">
+       
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="name">Name:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" type="name" class="form">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="address">Address:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="address">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="phone_number">Phone Number:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="phone_number">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="email">Email:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="email">
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          
+          <a data-toggle="collapse"  href="#collapse2">Monthly Income Info</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+       
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="base_monthly_income">Base Monthly Income:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="base_monthly_income">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="bonus_monthly_income">Bonus Monthly Income</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="bonus_monthly_income">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="commision_monthly_income">Commision Monthly Income</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="commision_monthly_income">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="net_rental_income">Net Rental Income</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="net_rental_income">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          
+          <a data-toggle="collapse"  href="#collapse3">Monthly Exoense Info</a>
+        </h4>
+      </div>
+      <div id="collapse3" class="panel-collapse collapse">
+        <div class="panel-body">
+       
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="rent">Rent:</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="rent">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="mortgage_payment_monthly">Monthly Mortgage Payment</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="mortgage_payment_monthly">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="credit_card_payments"> Monthly Credit Card Payments</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="credit_card_payments">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="auto_loan_payments">Monthly Car Payments</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="auto_loan_payments">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="installment_loan_payments">Monthly Installment Payments</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="installment_loan_payments">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          
+          <a data-toggle="collapse"  href="#collapse4">New Mortgage Info</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse">
+        <div class="panel-body">
+       
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="home_price">New Home Price</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="home_price">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="loan_amount">New Loan Amount</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="loan_amount">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="interest_rate">New Interest Rate</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="interest_rate">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="monthly_pi">Monthly PI</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="monthly_pi">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="monthly_ti">Monthly TI</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="monthly_ti">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="monthly_hoa">Monthly HOA</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="monthly_hoa">
+
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="total_monthly_payment">Total Monthly Payment</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="total_monthly_payment">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          
+          <a data-toggle="collapse"  href="#collapse5">Credit Score</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">
+       
+  <label class = "col-xs-6 col-xs-offset-3 text-center" for="credit_score">Credit Score</label>
+  <input class = "col-xs-6 col-xs-offset-3 text-center" name="credit_score">
+
+        </div>
+      </div>
+    </div>    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse"  href="#collapse6">Employment Info</a>
+        </h4>
+      </div>
+        <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">
+          <label class = "col-xs-6 col-xs-offset-3 text-center" for="length_of_employment">Length of Employment</label>
+          <input class = "col-xs-6 col-xs-offset-3 text-center" name="length_of_employment"> 
+        </div>
+      </div>
+    </div>   
   </div>
-  <label for="address">Address:</label>
-  <input name="address">
+</div>
 
-  <label for="phone_number">Phone Number:</label>
-  <input name="phone_number">
+<div class="container text-center">
+    <div class="row">
+      
+      <div class="col-sm-12">
+        <div class="col-sm-2 col-sm-offset-5 allborrowersbtn">
+            <input class = 'form-control' type="submit" value="Create"> 
+        </div>
+    </div>
+  </div>
+</div>
 
-  <label for="email">Email:</label>
-  <input name="email">
-
-<h3>Monthly Income Information</h3>
-
-  <label for="base_monthly_income">Base Monthly Income:</label>
-  <input name="base_monthly_income">
-
-  <label for="bonus_monthly_income">Bonus Monthly Income</label>
-  <input name="bonus_monthly_income">
-
-  <label for="commision_monthly_income">Commision Monthly Income</label>
-  <input name="commision_monthly_income">
-
-  <label for="net_rental_income">Net Rental Income</label>
-  <input name="net_rental_income">
-
-<h3>Monthly Expense Information</h3>
-
-  <label for="rent">Rent:</label>
-  <input name="rent">
-
-  <label for="mortgage_payment_monthly">Monthly Mortgage Payment</label>
-  <input name="mortgage_payment_monthly">
-
-  <label for="credit_card_payments"> Monthly Credit Card Payments</label>
-  <input name="credit_card_payments">
-
-  <label for="auto_loan_payments">Monthly Car Payments</label>
-  <input name="auto_loan_payments">
-
-  <label for="installment_loan_payments">Monthly Installment Payments</label>
-  <input name="installment_loan_payments">
-
-<h3>New Mortgage Information</h3>
-
-  <label for="home_price">New Home Price</label>
-  <input name="home_price">
-
-  <label for="loan_amount">New Loan Amount</label>
-  <input name="loan_amount">
-
-  <label for="interest_rate">New Interest Rate</label>
-  <input name="interest_rate">
-
-  <label for="monthly_pi">Monthly PI</label>
-  <input name="monthly_pi">
-
-  <label for="monthly_ti">Monthly TI</label>
-  <input name="monthly_ti">
-
-  <label for="monthly_hoa">Monthly HOA</label>
-  <input name="monthly_hoa">
-
-  <label for="total_monthly_payment">Total Monthly Payment</label>
-  <input name="total_monthly_payment">
-
-<h3>Credit Score</h3>
-
-  <label for="credit_score">Credit Score</label>
-  <input name="credit_score">
-
-<h3>Employment History</h3>
-  
-  <label for="length_of_employment">Length of Employment</label>
-  <input name="length_of_employment"> 
-
-</form>
-
-<div>
-  <input type="submit" value="Create">  
-</div>  
 </form>

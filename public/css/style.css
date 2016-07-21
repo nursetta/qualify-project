@@ -1,6 +1,7 @@
-body {
+* {
   line-height: 1.5;
-  background: #f1f4f6;
+  font-family: Optima;
+  background-color: 
 }
 .navbar .navbar-header {
 
@@ -38,7 +39,7 @@ body {
 }
 
 .allborrowersbtn input {
-  display: inline-block;
+  /*display: inline-block;*/
   margin: 1%;
   font-family: Optima;
   background: #4dd66d;
@@ -54,8 +55,7 @@ body {
   font-size: 16px;
   padding: 6px 10px 6px 10px;
   text-decoration: none;
-  align: center;
-  display: inline;
+
 }
 
 .allborrowersbtn input:hover {
@@ -87,7 +87,7 @@ label {
   border-radius: 20px;
   color: #ffffff;
   font-size: 20px;
-  padding: 10px 20px 10px 20px;
+  padding: 3px 20px 3px 20px;
   text-decoration: none;
   align: center;
 }
@@ -97,6 +97,49 @@ label {
   text-decoration: none;
 }
 
-.edit_borrower {
-  display: inline;
+input, select {
+  display: block;
 }
+
+.row .button {
+width: 30%
+}
+
+.dti {
+  border: 3pt solid black;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 20px;
+  padding: 10px 0px 10px 0px;
+  margin: 18px 0px 0px 0px;
+  background: #bdc3c7;
+}
+
+.no_qual_main_page {
+  background-color: #d6f5e0;
+}
+
+
+.create_form .panel-group .panel-default .panel-heading {
+    color: white;
+    background-color: #9d9d9d;
+    border-color: #ddd;
+}
+
+.container .create_form {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 225px 0px 225px;
+}
+
+main .container .panel-grouop {
+    /* padding-right: 15px; */
+    /* padding-left: 15px; */
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 225px 0px 225px;
+}
+
+
