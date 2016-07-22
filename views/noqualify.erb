@@ -1,20 +1,20 @@
 <div class="no_qual_main_page container">
 
 <div class = "sorry col-md-12 text-center">
-	<h1> Sorry, unfortunately you do not qualify </h1>
+	<h1> Sorry, unfortunately you do not qualify. </h1>
 </div>
 
 <div class = "sorry col-md-12 text-center" >
-	<h2> Please check out your stats below to see why you didn't qualify</h2>
+	<h2 id= "sorry_text"> Please check out your stats below to see why you didn't qualify</h2>
 </div>
 
 <div class = "dti col-md-12 text-center">
 		<div class = "noq1 col-md-4" >
-			<h2> Total Debt = $<%= "#{@total_debt}" %> </h2>
+			<h2> Total Debt/mo. = $<%= "#{@total_debt}" %> </h2>
 		</div>
 		
 		<div class = "noq2 col-md-4" >
-			<h2> Total Income = $<%= "#{@total_income}" %> </h2>
+			<h2> Total Income/mo. = $<%= "#{@total_income}" %> </h2>
 		</div>
 
 		<div class = "noq3 col-md-4">
@@ -22,17 +22,17 @@
 		</div>
 		
 		<div class = "noq4 col-md-12 text-center">
-			<h3> Typical Debt To Income (DTI) ratios need to be around 0.43. Your's is currently at <%= "#{@dti}" %> </h3>
+			<h3> Typical Debt To Income (DTI) ratios need to be around 0.43. Your's is currently at <%= "#{@dti}" %>. </h3>
 		</div>
 	</div>
 
 <div class = "dti col-md-12 text-center">	
 		<div class = "noq5">
-			<h2> Total Loan To Value = <%= "#{@ltv}" %> </h2>
+			<h2> Loan To Value (LTV) = <%= "#{@ltv}" %> </h2>
 		</div>
 
 		<div class = "noq6">
-			<h3> Most banks will allow for a range of LTVs when making a qualification decision. Typically, any LTV above .8 will require mortgage insurance. Often times in order to qualify for mortgage insurance you need to meet even stricter guidelines. If you need a loan amount that puts your LTV higher than .8, consult with your local lender about the requirements for obtaining mortgage insurance.</h3>
+			<h3> Most banks will allow for various LTV limits when making a qualification decision. Typically, any LTV above .8 will require mortgage insurance. If you need a loan amount that puts your LTV higher than .8, consult with your local lender about the requirements for obtaining mortgage insurance.</h3>
 		</div>
 </div>
 
@@ -42,7 +42,7 @@
 		</div>
 
 		<div class = "noq8">
-			<h3> Your current credit score is <%= "#{@credit_score}" %>. Most banks will accept a minimum credit score of 640 or greater when determing whether or not a borrower can qualify. As a general rule of thumb, if your credit score is 740 or better, you wont need to worry about your credit score as a mitigating factor to the bank.</h3>
+			<h3> Your current credit score is <%= "#{@credit_score}" %>. Most banks will accept a minimum credit score of 640 when determing whether or not a borrower can qualify. As a general rule of thumb, if your credit score is 740 or better, you wont need to worry about your credit score hindering your ability to get a loan.</h3>
 		</div>
 </div>
 
@@ -52,7 +52,25 @@
 		</div>
 	
 		<div class = "noq10">
-			<h3>Most inverstors will require a 2 year employmnet history. Even if you have switched jobs recently, you may be able to argue that you have been in the same industry for 2 or more years. Additionally, you may be able to qualify with less than 2 years of employment, but that will be up to the specific lending institution.</h3>	
+			<h3>Most lenders will require a consistent 2 year employmnet history. Income also needs to be relatively stable during that time. Under certain circumstances, you may be able to qualify with less than 2 years of employment history. </h3>	
 		</div>
 	</div>
+</div>
+
+<div class="container text-center">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="col-sm-6">
+          <form class = 'allborrowersbtn' method= submit action = '/borrowers'>
+                <input class = 'create_borrower1 form-control' type = 'submit' value = 'Borrower Profile'>
+         </form>
+       </div>
+
+        <div class="col-sm-6">
+          <form class = 'allborrowersbtn' method= submit action = '/'>
+                <input class = 'create_borrower1 form-control' type = 'submit' value = 'Home'>
+         </form>
+       </div>
+     </div>
+   </div> 
 </div>
