@@ -1,26 +1,27 @@
 
+
 <div class="container text-center">
  	<% @borrowers.each do |borrower|%>
 
 
 <div class="container text-center">
     <div class = "img-responsive">
-        <img class = "img-circle" id = "ashley" src = http://i.imgur.com/ezN7UuY.jpg?1 width = "200" height = "200">
+        <img class = "img-thumbnail" id = "ashley" src = http://i.imgur.com/LYddN54.jpg width = "200" height = "200">
      
       <div>
         <h2><%= borrower[:name] %></h2>
       </div>
     </div>
 </div>
-  <div class="container panel-group" id="accordion">
+  <div class="container panel-group text-center" id="accordion">
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
           
-          <a id="dt" data-toggle="collapse"  href="#collapse1">Borrower Info</a>
+          <a id="dt" data-toggle="collapse" href="#collapse1<%=borrower[:id]%>">Borrower Info</a>
         </h4>
       </div>
-      <div id="collapse1" class="panel-collapse collapse">
+      <div id="collapse1<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
        
 				<p>Name:  <%= borrower[:name] %> </p>
@@ -36,10 +37,10 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a id="dt" data-toggle="collapse"  href="#collapse2">Monthly Income</a>
+          <a id="dt" data-toggle="collapse" href="#collapse2<%=borrower[:id]%>">Monthly Income</a>
         </h4>
       </div>
-      <div id="collapse2" class="panel-collapse collapse">
+      <div id="collapse2<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
 				<p>Base: $<%= borrower[:base_monthly_income] %>.00 </p>
 				<p>Bonus: $<%= borrower[:bonus_monthly_income] %>.00 </p>
@@ -53,10 +54,10 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a id="dt" data-toggle="collapse"  href="#collapse3">Monthly Expenses</a>
+          <a id="dt" data-toggle="collapse" href="#collapse3<%=borrower[:id]%>">Monthly Expenses</a>
         </h4>
       </div>
-      <div id="collapse3" class="panel-collapse collapse">
+      <div id="collapse3<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
 				<p>Rent: $<%= borrower[:rent] %>.00 </p>
 				<p>Mortgage Payment: $<%= borrower[:mortgage_payment_monthly] %>.00 </p>
@@ -71,13 +72,14 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a id="dt" data-toggle="collapse"  href="#collapse4">New Mortgage Info</a>
+          <a id="dt" data-toggle="collapse" href="#collapse4<%=borrower[:id]%>">New Mortgage Info</a>
         </h4>
       </div>
-      <div id="collapse4" class="panel-collapse collapse">
+      <div id="collapse4<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
 				<p>Price of Home: $<%= borrower[:home_price] %>.00 </p>
 				<p>Loan Amount: $<%= borrower[:loan_amount] %>.00 </p>
+        <p>Term: <%= borrower[:term] %> </p>
 				<p>Interest Rate: <%= borrower[:interest_rate] %>% </p>
 				<p>Monthly PI: $<%= borrower[:monthly_pi] %>.00 </p>
 				<p>Monthly TI: $<%= borrower[:monthly_ti] %>.00 </p>
@@ -91,10 +93,10 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a id="dt" data-toggle="collapse"  href="#collapse5">Credit Score</a>
+          <a id="dt" data-toggle="collapse" href="#collapse5<%=borrower[:id]%>">Credit Score</a>
         </h4>
       </div>
-      <div id="collapse5" class="panel-collapse collapse">
+      <div id="collapse5<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
 				<p>Credit Score:  <%= borrower[:credit_score] %> </p>
 
@@ -105,10 +107,10 @@
     <div class="panel panel-default">
       <div class="panel-heading">
         <h4 class="panel-title">
-          <a id="dt" data-toggle="collapse"  href="#collapse6">Employment History</a>
+          <a id="dt" data-toggle="collapse" href="#collapse6<%=borrower[:id]%>">Employment History</a>
         </h4>
       </div>
-      <div id="collapse6" class="panel-collapse collapse">
+      <div id="collapse6<%=borrower[:id]%>" class="panel-collapse collapse">
         <div class="panel-body">
 				<p>Length of Employmnet: <%= borrower[:length_of_employment] %> </p>
 

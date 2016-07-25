@@ -26,7 +26,8 @@ Borrower.create({
 				 	total_monthly_payment: 1298,
 				 	credit_score: 740,
 	  				type_of_employment: "W2",
-	  				length_of_employment: 2
+	  				length_of_employment: 2,
+	  				term: 30
 				})
 
 Borrower.create({
@@ -55,7 +56,8 @@ Borrower.create({
 				 	total_monthly_payment: 1298,
 				 	credit_score: 540,
 	  				type_of_employment: "Self Employed",
-	  				length_of_employment: 2
+	  				length_of_employment: 2,
+	  				term: 30
 				})
 
 Borrower.create({
@@ -84,5 +86,6 @@ Borrower.create({
 				 	total_monthly_payment: 2548,
 				 	credit_score: 850,
 	  				type_of_employment: "W2",
-	  				length_of_employment: 2
+	  				length_of_employment: 2,
+	  				term: 30
 				})

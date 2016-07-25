@@ -39,8 +39,8 @@ set :method_override, true
       
       home_price = @borrower.home_price
       loan_amount = @borrower.loan_amount
-      interest_rate = @borrower.interest_rate
-      pi = @borrower.monthly_pi
+      interest_rate = @borrower.interest_rate.to_f
+      pi = @borrower.monthly_pi.to_f
       ti = @borrower.monthly_ti
       hoa = @borrower.monthly_hoa
         @total_mortgage_payment = pi + ti + hoa
@@ -57,6 +57,8 @@ set :method_override, true
 
       @employment_length = @borrower.length_of_employment
         p @employment_length
+
+      @new_monthly_payment = (((@total_debt) - rent_expense - mortgage_expense) + @total_mortgage_payment)
 
     if @dti > 0.45 || @ltv > 0.9 || @credit_score < 640 || @employment_length < 2
       erb :noqualify
